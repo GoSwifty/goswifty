@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://twitter.com/rsrbk123">
+  <a href="https://x.com/goswiftybnb">
     <img src="https://img.shields.io/badge/Twitter-@rsrbk123-1DA1F2?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" />
   </a>
   <img src="https://img.shields.io/badge/Language-Swift%20%2B%20Objective--C-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Language" />
