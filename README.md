@@ -1,5 +1,12 @@
 # GoSwifty
 
+<p align="left">
+  <a href="https://twitter.com/rsrbk123">
+    <img src="https://img.shields.io/badge/Twitter-@rsrbk123-1DA1F2?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"/>
+  </a>
+  <img src="https://img.shields.io/badge/Language-Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Language: Swift"/>
+</p>
+
 A command line tool which gives you a comprehensive analysis of your codebase in terms of Objective-C/Swift ratio.
 
 <p align="center">
