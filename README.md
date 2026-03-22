@@ -12,6 +12,8 @@ A command line tool which gives you a comprehensive analysis of your codebase in
 - Swift classes count vs Objective-C classes count.
 - Swift structs count vs Objective-C structs count.
 
+In this refreshed version, `GoSwifty` also includes an **AI toolkit** that helps transform existing repositories into AI/AI-agent friendly projects while preserving original content.
+
 ## Example (Wikipedia iOS App):
 <p align="center">
     <img src="https://github.com/rsrbk/GoSwifty/blob/master/example.png?raw=true" alt="Blue"/>
@@ -57,6 +59,31 @@ You can also analyze multiple folders. The results will be combined from all the
 ```sh
 goswifty analyze /Your/Folder/Path /Your/Other/Folder/Path
 ```
+
+## AI Toolkit (new)
+### 1. Audit AI/Agent readiness
+Scan one or more folders and get a readiness score, engineering signals, detected AI keywords, and concrete next steps.
+
+```sh
+goswifty ai audit /Your/Folder/Path
+```
+
+You can also save the result to a markdown report:
+```sh
+goswifty ai audit /Your/Folder/Path --output AI_READINESS_REPORT.md
+```
+
+### 2. Generate AGENTS.md scaffold
+Create a starter `AGENTS.md` that gives AI coding agents clear rules, workflow commands, and an implementation backlog.
+
+```sh
+goswifty ai scaffold /Your/Folder/Path --output AGENTS.md
+```
+
+### Why this helps
+- Keeps original project behavior intact (`analyze` still works as before).
+- Adds AI transformation support as **new commands**, not breaking existing workflows.
+- Gives you a practical baseline for AI agent collaboration in legacy codebases.
 ## Follow me on twitter
 I promise it's gonna be more interesting stuff there! [@rsrbk123](https://twitter.com/rsrbk123)
 
