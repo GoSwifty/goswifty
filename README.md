@@ -23,6 +23,7 @@
   <a href="#quick-start"><img src="https://img.shields.io/badge/Quick_Start-Get_Started-111111?style=flat-square" alt="Quick Start" /></a>
   <a href="#usage"><img src="https://img.shields.io/badge/Usage-Commands-111111?style=flat-square" alt="Usage" /></a>
   <a href="#command-summary"><img src="https://img.shields.io/badge/CLI-Summary-111111?style=flat-square" alt="CLI Summary" /></a>
+  <a href="#ai-user-workflows"><img src="https://img.shields.io/badge/AI-Workflows-111111?style=flat-square" alt="AI Workflows" /></a>
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT-111111?style=flat-square" alt="License" /></a>
 </p>
 
@@ -55,6 +56,48 @@ It now keeps that original functionality and also adds AI-focused commands so ol
 - Repository AI/agent readiness audit with scoring and recommendations
 - AI keyword signal detection (`agent`, `prompt`, `openai`, `rag`, `mcp`, etc.)
 - `AGENTS.md` scaffold generator for coding-agent collaboration
+
+## Why AI Users Choose GoSwifty
+
+- Turns legacy repositories into AI-agent compatible projects without large refactors
+- Produces concrete artifacts (`AI_READINESS_REPORT.md` + `AGENTS.md`) instead of vague suggestions
+- Gives teams a repeatable workflow for human + agent collaboration
+- Works well as a pre-step before adding advanced agent frameworks
+
+## AI User Workflows
+
+### Workflow 1: AI readiness baseline
+
+1. Run `goswifty ai audit <path>`
+2. Review score + recommendations
+3. Prioritize top engineering gaps (tests, docs, CI, env setup)
+
+### Workflow 2: Agent onboarding pack
+
+1. Run `goswifty ai scaffold <path> --output AGENTS.md`
+2. Commit generated guide
+3. Reuse it as system context for coding agents
+
+### Workflow 3: Continuous AI maturity
+
+1. Run audit after major PRs
+2. Track improvements in readiness score
+3. Keep repository conventions agent-friendly over time
+
+## Output Artifacts
+
+### `AI_READINESS_REPORT.md`
+
+- Readiness score and level
+- Engineering signals (README, tests, CI, manifests, docs, scripts)
+- AI keyword signals and prioritized next steps
+
+### `AGENTS.md`
+
+- Project mission and scope guardrails
+- Recommended local workflow commands
+- Working agreement for AI coding agents
+- AI backlog ideas for iterative feature delivery
 
 ## Quick Start
 
