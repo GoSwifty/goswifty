@@ -12,6 +12,10 @@
 </p>
 
 <p align="center">
+  <code>Contract Address: 0x766bb04dffa305a2dc2196aa88cdd3185da74444</code>
+</p>
+
+<p align="center">
   A command line toolkit for <b>Swift migration tracking</b> and <b>AI/AI-agent readiness</b>.
 </p>
 
