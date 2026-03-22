@@ -2,8 +2,8 @@ import ArgumentParser
 
 struct GoSwifty: ParsableCommand {
     static let configuration = CommandConfiguration(
-        abstract: "A command-line tool to measure the swift coverage in your project",
-        subcommands: [Analyze.self])
+        abstract: "A command-line tool to measure Swift migration and AI-agent readiness",
+        subcommands: [Analyze.self, AI.self])
 
     init() { }
 }
