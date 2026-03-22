@@ -59,45 +59,52 @@ It now keeps that original functionality and also adds AI-focused commands so ol
 
 ## Why AI Users Choose GoSwifty
 
-- Turns legacy repositories into AI-agent compatible projects without large refactors
-- Produces concrete artifacts (`AI_READINESS_REPORT.md` + `AGENTS.md`) instead of vague suggestions
-- Gives teams a repeatable workflow for human + agent collaboration
-- Works well as a pre-step before adding advanced agent frameworks
+- **Low-friction adoption**: keep your existing codebase and workflows, then layer AI-readiness on top
+- **Actionable outputs**: generate concrete artifacts (`AI_READINESS_REPORT.md` and `AGENTS.md`) instead of generic advice
+- **Framework-agnostic**: use it before OpenAI, Claude, MCP-based, or custom agent pipelines
+- **Team-ready structure**: establish shared conventions so humans and agents collaborate consistently
+- **Legacy-friendly**: especially useful for repositories that need modernization without risky rewrites
 
 ## AI User Workflows
 
-### Workflow 1: AI readiness baseline
+### Workflow 1: Baseline -> Plan
 
-1. Run `goswifty ai audit <path>`
-2. Review score + recommendations
-3. Prioritize top engineering gaps (tests, docs, CI, env setup)
+1. Run `goswifty ai audit <path> --output AI_READINESS_REPORT.md`
+2. Review score, engineering signals, and missing foundations
+3. Turn top recommendations into a prioritized implementation plan
+4. Assign tasks to human contributors and AI agents
 
-### Workflow 2: Agent onboarding pack
+### Workflow 2: Agent Onboarding Pack
 
 1. Run `goswifty ai scaffold <path> --output AGENTS.md`
-2. Commit generated guide
-3. Reuse it as system context for coding agents
+2. Commit the generated guide into the repository root
+3. Use `AGENTS.md` as system/context instructions for coding agents
+4. Keep command expectations and guardrails centralized for the team
 
-### Workflow 3: Continuous AI maturity
+### Workflow 3: Continuous AI Maturity
 
-1. Run audit after major PRs
-2. Track improvements in readiness score
-3. Keep repository conventions agent-friendly over time
+1. Re-run `ai audit` after major releases or refactors
+2. Track readiness score trend over time
+3. Close gaps in tests, docs, CI, and contributor guidance
+4. Maintain a stable, agent-friendly repository operating model
 
 ## Output Artifacts
 
 ### `AI_READINESS_REPORT.md`
 
-- Readiness score and level
-- Engineering signals (README, tests, CI, manifests, docs, scripts)
-- AI keyword signals and prioritized next steps
+- Readiness score (`Low` / `Medium` / `High`) with an overall snapshot
+- Engineering signal checks (README, tests, CI, manifests, docs, scripts, templates)
+- AI keyword signal summary (`agent`, `prompt`, `openai`, `rag`, `mcp`, etc.)
+- Prioritized recommendations to move from baseline to production-grade AI workflows
+- A clear handoff document for planning sprints and technical debt cleanup
 
 ### `AGENTS.md`
 
-- Project mission and scope guardrails
-- Recommended local workflow commands
-- Working agreement for AI coding agents
-- AI backlog ideas for iterative feature delivery
+- Project mission, boundaries, and non-negotiable scope guardrails
+- Canonical local workflow commands for build, test, and analysis
+- Working agreement for AI coding agents and human reviewers
+- Suggested AI backlog for iterative delivery and measurable progress
+- A reusable collaboration contract you can adapt across future repositories
 
 ## Quick Start
 
